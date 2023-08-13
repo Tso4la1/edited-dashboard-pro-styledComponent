@@ -1,12 +1,12 @@
 import React from 'react'
 import Text from '../../Atoms/Text'
 
-export default function Usercalendar() {
+export default function UserCalendar() {
   return (
-    <div className='usercalendar flex b-color'>
-          <Text word="day" />
-          <Text word="week" />
-          <Text word="month" />
+    <div className='userCalendar'>
+      <Text type="p" text="Daily" />
+      <Text type="p" text="Weekly" />
+      <Text type="p" text="Monthly" />
     </div>
   )
 }

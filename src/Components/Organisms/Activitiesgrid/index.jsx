@@ -2,63 +2,63 @@ import React from "react";
 import Icons from "../../Atoms/Icons";
 import UserTimerList from "../../Molecules/UserTimerList";
 import Text from "../../Atoms/Text";
-import Images from "../../Atoms/Images";
+
 
 export default function Activitiesgrid() {
     const active =
         [
             {
                 id: 1,
-                duty: <Text word = "wor" />,
-                icon: "moreOption",
-                time: <Text word = "t32" />,
-                text: <Text word = "lw36" />,
-                backgroundImg: <Images imageName = "backWork" />,
+                duty: <Text type="p" text="Work" />,
+                icon: "ellipsis",
+                time: <Text type="p" text="32hrs" className="bigLetter" />,
+                text: <Text type="p" text="Last Week - 36hrs" className="smallLetter" />,
+                backgroundImg: <Icons type="work" className="backgroundIcon" />,
             },
             {
                 id: 2,
-                duty: <Text word = "pla" />,
-                icon: "moreOption",
-                time: <Text word = "t10" />,
-                text: <Text word = "lw8" />,
-                backgroundImg: <Images imageName = "backPlay" />,
+                duty: <Text type="p" text="Play" />,
+                icon: "ellipsis",
+                time: <Text type="p" text="10hrs" className="bigLetter" />,
+                text: <Text type="p" text="Last Week - 8hrs" className="smallLetter" />,
+                backgroundImg: <Icons type="play" className="backgroundIcon" />,
             },
             {
                 id: 3,
-                duty: <Text word = "stud" />,
-                icon: "moreOption",
-                time: <Text word = "t4" />,
-                text: <Text word = "lw7" />,
-                backgroundImg: <Images imageName = "backStudy" />,
+                duty: <Text type="p" text="Study" />,
+                icon: "ellipsis",
+                time: <Text type="p" text="4hrs" className="bigLetter" />,
+                text: <Text type="p" text="Last Week - 7hrs" className="smallLetter" />,
+                backgroundImg: <Icons type="study" className="backgroundIcon" />,
             },
             {
                 id: 4,
-                duty: <Text word = "exer" />,
-                icon: "moreOption",
-                time: <Text word = "t4" />,
-                text: <Text word = "lw5" />,
-                backgroundImg: <Images imageName = "backEx" />,
+                duty: <Text type="p" text="Exercise" />,
+                icon: "ellipsis",
+                time: <Text type="p" text="4hrs" className="bigLetter" />,
+                text: <Text type="p" text="Last Week - 5hrs" className="smallLetter" />,
+                backgroundImg: <Icons type="exercise" className="backgroundIcon" />,
             },
             {
                 id: 5,
-                duty: <Text word = "soc" />,
-                icon: "moreOption",
-                time: <Text word = "t5" />,
-                text: <Text word = "lw10" />,
-                backgroundImg: <Images imageName = "backSocial" />,
+                duty: <Text type="p" text="Social" />,
+                icon: "ellipsis",
+                time: <Text type="p" text="5hrs" className="bigLetter" />,
+                text: <Text type="p" text="Last Week - 10hrs" className="smallLetter" />,
+                backgroundImg: <Icons type="social" className="backgroundIcon" />,
             },
             {
                 id: 6,
-                duty: <Text word = "selca" />,
-                icon: "moreOption",
-                time: <Text word = "t2" />,
-                text: <Text word = "lw2"/>,
-                backgroundImg: <Images imageName = "backselca"/>,
+                duty: <Text type="p" text="Self Care" />,
+                icon: "ellipsis",
+                time: <Text type="p" text="2hrs" className="bigLetter" />,
+                text: <Text type="p" text="Last Week - 2hrs" className="smallLetter" />,
+                backgroundImg: <Icons type="self-care" className="backgroundIcon" />,
             }
-  ];
+        ];
     return (
-         <div className="activitiesGrid">
-            <UserTimerList active= { active} />
+        <div className="activitiesGrid">
+            <UserTimerList active={active} />
         </div>)
-  ;
+        ;
 }

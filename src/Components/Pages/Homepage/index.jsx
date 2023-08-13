@@ -1,12 +1,12 @@
 import React from "react";
 import UserCard from "../../Organisms/UserCard";
-import Activitiesgrid from "../../Organisms/Activitiesgrid";
+import ActivitiesGrid from "../../Organisms/ActivitiesGrid";
 
 export default function Homepage() {
   return (
-    <div className="homepage flex">
+    <div className="homepage">
       <UserCard />
-      <Activitiesgrid />
+      <ActivitiesGrid />
     </div>
   );
 }

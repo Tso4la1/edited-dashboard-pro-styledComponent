@@ -3,16 +3,16 @@ import Icons from "../../Atoms/Icons";
 
 export default function UserTimerList({ active }) {
   return (
-    <div className="userTimerList flex flex-column">
+    <div className="userTimerList">
       {active.map((item) => (
         <div className="firstActiveTimer" key={item.id}>
           <div className="userTimerListBack">{item.backgroundImg}</div>
-          <div key={item.id} className="userTimerListDetails flex flex-column">
-            <div className="flex flex userTimerTitle">
+          <div key={item.id} className="userTimerListDetails">
+            <div className="userTimerTitle">
               {item.duty}
-              <Icons label={item.icon} style={{width:"13px", height: "3px"}}/>
+              <Icons type={item.icon} />
             </div>
-            <div className="flex flex-row userTimer">
+            <div className="userTimer">
               {item.time}
               {item.text}
             </div>
@@ -22,3 +22,4 @@ export default function UserTimerList({ active }) {
     </div>
   );
 }
+
