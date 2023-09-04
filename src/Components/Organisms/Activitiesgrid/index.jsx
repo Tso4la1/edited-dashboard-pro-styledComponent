@@ -1,7 +1,8 @@
 import React from "react";
 import Icons from "../../Atoms/Icons";
-import UserTimerList from "../../Molecules/UserTimerList";
 import Text from "../../Atoms/Text";
+import UserTimerList from "../../Molecules/UserTimerList";
+
 
 
 export default function Activitiesgrid() {

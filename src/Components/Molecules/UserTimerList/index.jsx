@@ -1,12 +1,14 @@
 import React from "react";
 import Icons from "../../Atoms/Icons";
+import { UserTimerListWrapper, UserTimerListBackWrapper, FirstActiveTimerWrapper } from "../../Atoms";
+
 
 export default function UserTimerList({ active }) {
   return (
-    <div className="userTimerList">
+    <UserTimerListWrapper >
       {active.map((item) => (
-        <div className="firstActiveTimer" key={item.id}>
-          <div className="userTimerListBack">{item.backgroundImg}</div>
+        <FirstActiveTimerWrapper className="firstActiveTimer" key={item.id}>
+          <UserTimerListBackWrapper className="userTimerListBack">{item.backgroundImg}</UserTimerListBackWrapper>
           <div key={item.id} className="userTimerListDetails">
             <div className="userTimerTitle">
               {item.duty}
@@ -17,9 +19,9 @@ export default function UserTimerList({ active }) {
               {item.text}
             </div>
           </div>
-        </div>
+        </FirstActiveTimerWrapper>
       ))}
-    </div>
+    </UserTimerListWrapper>
   );
 }
 

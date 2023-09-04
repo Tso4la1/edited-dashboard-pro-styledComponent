@@ -2,23 +2,24 @@ import React from "react";
 import profilePic from "../../../assets/image-jeremy.png"
 import Images from "../../Atoms/Images";
 import Text from "../../Atoms/Text";
+import { UserTabDetailsWrapper, NameStyleWrapper, UserProfileImgWrapper, UserReportWrapper } from "../../Atoms";
 
 export default function UserTabDetails() {
   return (
-    <div className="userTabDetails">
-      <div className="userProfileImg">
+    <UserTabDetailsWrapper>
+      <UserProfileImgWrapper>
         <Images className="userProfileImgAvatar" src={profilePic} alt="profilePicture" height="40px" />
-      </div>
-      <div className="userdetails">
-        <div className="usereport">
+      </UserProfileImgWrapper>
+      <div>
+        <UserReportWrapper>
           <Text type="p" text="Report for" />
-        </div>
+        </UserReportWrapper>
 
-        <div className="nameStyle">
+        <NameStyleWrapper>
           <Text type="p" text="Jeremy" />
           <Text type="p" text="Robson" />
-        </div>
+        </NameStyleWrapper>
       </div>
-    </div>
+    </UserTabDetailsWrapper>
   );
 }

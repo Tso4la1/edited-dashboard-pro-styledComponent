@@ -1,12 +1,13 @@
 import React from "react";
 import UsertabDetails from "../../Molecules/UserTabDetails";
-import UserCalendar from "../../Molecules/Usercalendar";
+import UserCalendar from "../../Molecules/UserCalendar"
+import { UserCardWrapper } from "../../Atoms/UserCardWrapper";
 
 export default function UserCard() {
   return (
-    <div className="usercard">
+    <UserCardWrapper >
       <UsertabDetails />
       <UserCalendar />
-    </div>
+    </UserCardWrapper>
   );
 }
